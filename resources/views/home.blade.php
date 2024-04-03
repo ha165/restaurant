@@ -119,7 +119,7 @@ https://templatemo.com/tm-558-klassy-cafe
                 <div class="col-lg-4">
                     <div class="left-content">
                         <div class="inner-content">
-                            <h4>KlassyCafe</h4>
+                            <h4>Restaurant</h4>
                             <h6>THE BEST EXPERIENCE</h6>
                             <div class="main-white-button scroll-to-section">
                                 <a href="#reservation">Make A Recomendation</a>
@@ -218,7 +218,7 @@ https://templatemo.com/tm-558-klassy-cafe
                               <h1 class='title'>Chocolate Cake</h1>
                               <p class='description'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sedii do eiusmod teme.</p>
                               <div class="main-text-button">
-                                  <div class="scroll-to-section"><a href="#reservation">Make Reservation <i class="fa fa-angle-down"></i></a></div>
+                                  <div class="scroll-to-section"><a href="#reservation">Make Recomendation <i class="fa fa-angle-down"></i></a></div>
                               </div>
                             </div>
                         </div>
@@ -230,7 +230,7 @@ https://templatemo.com/tm-558-klassy-cafe
                               <h1 class='title'>Klassy Pancake</h1>
                               <p class='description'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sedii do eiusmod teme.</p>
                               <div class="main-text-button">
-                                  <div class="scroll-to-section"><a href="#reservation">Make Reservation <i class="fa fa-angle-down"></i></a></div>
+                                  <div class="scroll-to-section"><a href="#reservation">Make Recomendation <i class="fa fa-angle-down"></i></a></div>
                               </div>
                             </div>
                         </div>
@@ -242,7 +242,7 @@ https://templatemo.com/tm-558-klassy-cafe
                               <h1 class='title'>Tall Klassy Bread</h1>
                               <p class='description'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sedii do eiusmod teme.</p>
                               <div class="main-text-button">
-                                  <div class="scroll-to-section"><a href="#reservation">Make Reservation <i class="fa fa-angle-down"></i></a></div>
+                                  <div class="scroll-to-section"><a href="#reservation">Make Recomendation <i class="fa fa-angle-down"></i></a></div>
                               </div>
                             </div>
                         </div>
@@ -254,7 +254,7 @@ https://templatemo.com/tm-558-klassy-cafe
                               <h1 class='title'>Blueberry CheeseCake</h1>
                               <p class='description'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sedii do eiusmod teme.</p>
                               <div class="main-text-button">
-                                  <div class="scroll-to-section"><a href="#reservation">Make Reservation <i class="fa fa-angle-down"></i></a></div>
+                                  <div class="scroll-to-section"><a href="#reservation">Make Recomendation <i class="fa fa-angle-down"></i></a></div>
                               </div>
                             </div>
                         </div>
@@ -266,7 +266,7 @@ https://templatemo.com/tm-558-klassy-cafe
                               <h1 class='title'>Klassy Cup Cake</h1>
                               <p class='description'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sedii do eiusmod teme.</p>
                               <div class="main-text-button">
-                                  <div class="scroll-to-section"><a href="#reservation">Make Reservation <i class="fa fa-angle-down"></i></a></div>
+                                  <div class="scroll-to-section"><a href="#reservation">Make Recomendation <i class="fa fa-angle-down"></i></a></div>
                               </div>
                             </div>
                         </div>
@@ -278,7 +278,7 @@ https://templatemo.com/tm-558-klassy-cafe
                               <h1 class='title'>Klassic Cake</h1>
                               <p class='description'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sedii do eiusmod teme.</p>
                               <div class="main-text-button">
-                                  <div class="scroll-to-section"><a href="#reservation">Make Reservation <i class="fa fa-angle-down"></i></a></div>
+                                  <div class="scroll-to-section"><a href="#reservation">Make Recomendation <i class="fa fa-angle-down"></i></a></div>
                               </div>
                             </div>
                         </div>
@@ -357,7 +357,7 @@ https://templatemo.com/tm-558-klassy-cafe
     </section>
     <!-- ***** Chefs Area Ends ***** -->
 
-    <!-- ***** Reservation Us Area Starts ***** -->
+    <!-- ***** Recomendation Us Area Starts ***** -->
     <section class="section" id="reservation">
         <div class="container">
             <div class="row">
@@ -365,7 +365,7 @@ https://templatemo.com/tm-558-klassy-cafe
                     <div class="left-text-content">
                         <div class="section-heading">
                             <h6>Contact Us</h6>
-                            <h2>Here You Can Make A Reservation Or Just walkin to our cafe</h2>
+                            <h2>Here You Can Make A Recomendation Or Just walkin to our cafe</h2>
                         </div>
                         <p>Donec pretium est orci, non vulputate arcu hendrerit a. Fusce a eleifend riqsie, namei sollicitudin urna diam, sed commodo purus porta ut.</p>
                         <div class="row">
@@ -391,7 +391,7 @@ https://templatemo.com/tm-558-klassy-cafe
                         <form id="contact" action="" method="post">
                           <div class="row">
                             <div class="col-lg-12">
-                                <h4>Table Reservation</h4>
+                                <h4>Table Recomendation</h4>
                             </div>
                             <div class="col-lg-6 col-sm-12">
                               <fieldset>
@@ -454,7 +454,7 @@ https://templatemo.com/tm-558-klassy-cafe
                             </div>
                             <div class="col-lg-12">
                               <fieldset>
-                                <button type="submit" id="form-submit" class="main-button-icon">Make A Reservation</button>
+                                <button type="submit" id="form-submit" class="main-button-icon">Make A Recomendation</button>
                               </fieldset>
                             </div>
                           </div>
@@ -464,7 +464,7 @@ https://templatemo.com/tm-558-klassy-cafe
             </div>
         </div>
     </section>
-    <!-- ***** Reservation Area Ends ***** -->
+    <!-- ***** Recomendation Area Ends ***** -->
 
     <!-- ***** Menu Area Starts ***** -->
     <section class="section" id="offers">
