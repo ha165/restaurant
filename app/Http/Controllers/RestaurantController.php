@@ -12,4 +12,8 @@ class RestaurantController extends Controller
         $restaurants = Restaurant::all();
         return view('admin.pages.restaurants',compact('restaurants'));
     }
+    public function create()
+    {
+        return view('admin.newrest');
+    }
 }

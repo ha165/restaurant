@@ -7,8 +7,10 @@
     @include('admin.admincss')
   </head>
   <body>
-      
-    @include("admin.navbar")  
+     <div class="container-scroller">
+      @include("admin.navbar")  
+    </div> 
+    
 
     <!-- plugins:js -->
   @include('admin.adminscripts') 

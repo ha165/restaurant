@@ -28,6 +28,8 @@ Route::get('/recomendations',[RecomendationController::class,'index']);
 
 Route::get('/users/add',[AdminController::class,'create'])->name('user.add');
 
+Route::get('/new/restaurant',[RestaurantController::class,'create']);
+
 Route::get('/restaurants',[RestaurantController::class,'index']);
 
 Route::middleware([
