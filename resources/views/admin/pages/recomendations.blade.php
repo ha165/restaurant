@@ -43,21 +43,21 @@
                                             <th class="text-secondary opacity-7">Action</th>
                                         </tr>
                                     </thead>
-                                    @foreach ($users as $user )
+                                    @foreach ($recomendations as $recomendation )
                                         <tbody>
                                         <tr>
                                             <td>
                                                 <div class="d-flex px-2 py-1">
                                                     <div class="d-flex flex-column justify-content-center">
-                                                        <p class="mb-0 text-sm">{{$user->id}}</p>
+                                                        <p class="mb-0 text-sm">{{$recomendation->id}}</p>
                                                     </div>
                                                 </div>
                                             </td>
                                             <td class="align-middle text-center text-sm">
-                                                <p class="text-xs text-secondary mb-0 text-wrap">{{$user->name}}</p>
+                                                <p class="text-xs text-secondary mb-0 text-wrap">{{$recomendation->name}}</p>
                                             </td>
                                             <td class="align-middle text-center text-sm">
-                                                <p class="text-xs text-secondary mb-0 text-wrap">{{$user->email}}</p>
+                                                <p class="text-xs text-secondary mb-0 text-wrap">{{$recomendation->email}}</p>
                                             </td>
                                             <td class="align-middle text-center">
                                                 <span class="text-secondary text-xs font-weight-bold">
@@ -93,4 +93,3 @@
 </html>
 </body>
 </html>
-
