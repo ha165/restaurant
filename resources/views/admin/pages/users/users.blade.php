@@ -9,7 +9,7 @@
 <body>
     <x-app-layout>
     
-</x-app-layout>
+  </x-app-layout>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -26,7 +26,7 @@
                     <div class="card my-4">
                         <div class="card-body px-0 pb-2">
                             <div class=" me-3 my-3 text-end">
-                                <a class="btn bg-gradient-dark mb-0" href=""> New
+                                <a class="btn bg-gradient-dark mb-0" href="{{route('user.add')}}"> New
                                     User</a>
                             </div>
                             <div class="table-responsive p-0">

@@ -26,6 +26,8 @@ Route::get('users',[AdminController::class,'users']);
 
 Route::get('/recomendations',[RecomendationController::class,'index']);
 
+Route::get('/users/add',[AdminController::class,'create'])->name('user.add');
+
 Route::get('/restaurants',[RestaurantController::class,'index']);
 
 Route::middleware([
