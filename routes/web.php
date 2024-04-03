@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\AdminController;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,6 +19,8 @@ use App\Http\Controllers\HomeController;
 Route::get('/', ([HomeController::class, 'index']));
 
 Route::get('/redirects', ([HomeController::class, 'redirects']));
+
+Route::get('users',[AdminController::class,'users'])->name('users');
 
 Route::middleware([
     'auth:sanctum',

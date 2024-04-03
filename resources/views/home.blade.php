@@ -213,7 +213,7 @@ https://templatemo.com/tm-558-klassy-cafe
                 <div class="owl-menu-item owl-carousel">
                     <div class="item">
                         <div class='card card1'>
-                            <div class="price"><h6>$14</h6></div>
+                            <div class="price"><h6>KSH12</h6></div>
                             <div class='info'>
                               <h1 class='title'>Chocolate Cake</h1>
                               <p class='description'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sedii do eiusmod teme.</p>
@@ -582,7 +582,7 @@ https://templatemo.com/tm-558-klassy-cafe
                                                             <h4>Eggs Omelette</h4>
                                                             <p>Lorem ipsum dolor sit amet, consectetur koit adipiscing elit, sed do.</p>
                                                             <div class="price">
-                                                                <h6>$14</h6>
+                                                                <h6>KSH12</h6>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -658,7 +658,7 @@ https://templatemo.com/tm-558-klassy-cafe
                                                             <h4>Eggs Omelette</h4>
                                                             <p>Lorem ipsum dolor sit amet, consectetur koit adipiscing elit, sed do.</p>
                                                             <div class="price">
-                                                                <h6>$14</h6>
+                                                                <h6>KSH12</h6>
                                                             </div>
                                                         </div>
                                                     </div>
