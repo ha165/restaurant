@@ -83,9 +83,9 @@ https://templatemo.com/tm-558-klassy-cafe
                             </li>
                             <!-- <li class=""><a rel="sponsored" href="https://templatemo.com" target="_blank">External URL</a></li> -->
                             <li class="scroll-to-section"><a href="#reservation">Contact Us</a></li> 
-                            <li> 
+                            <li class=""> 
                           @if (Route::has('login'))
-                              <div class="sm:fixed sm:top-0 sm:right-0 p-6 text-right z-10">
+                              
                                 @auth
                                       <x-app-layout>
     
@@ -96,7 +96,7 @@ https://templatemo.com/tm-558-klassy-cafe
                                         <li><a href="{{ route('register') }}" class="ml-4 font-semibold text-gray-600 hover:text-gray-900 focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">Register</a></li>
                                      @endif
                                   @endauth
-                               </div>
+                               
                          @endif
                             </li>
                         </ul>       
@@ -122,7 +122,7 @@ https://templatemo.com/tm-558-klassy-cafe
                             <h4>KlassyCafe</h4>
                             <h6>THE BEST EXPERIENCE</h6>
                             <div class="main-white-button scroll-to-section">
-                                <a href="#reservation">Make A Reservation</a>
+                                <a href="#reservation">Make A Recomendation</a>
                             </div>
                         </div>
                     </div>
