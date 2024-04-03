@@ -12,4 +12,5 @@ class AdminController extends Controller
         $users = User::all();
         return view('admin.pages.users',compact('users'));
     }
+
 }
