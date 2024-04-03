@@ -43,22 +43,7 @@
               <span class="menu-title">Recomadations</span>
             </a>
           </li>
-           <li class="nav-item menu-items">
-            <a class="nav-link" href="{{url('/new/restaurant')}}">
-              <span class="menu-icon">
-                <i class="mdi mdi-chart-bar"></i>
-              </span>
-              <span class="menu-title">Add Restaurants</span>
-            </a>
-          </li>
-          <li class="nav-item menu-items">
-            <a class="nav-link" href="{{url('/recomendations')}}">
-              <span class="menu-icon">
-                <i class="mdi mdi-chart-bar"></i>
-              </span>
-              <span class="menu-title">Add Food</span>
-            </a>
-          </li>
+         
         </ul>
       </nav>
     
