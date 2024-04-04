@@ -12,9 +12,9 @@ class AdminController extends Controller
         $users = User::all();
         return view('admin.pages.users.users',compact('users'));
     }
-    public function create()
+    public function restaurant()
     {
-        return view('admin.pages.users.adduser');
+        return view('admin.restaurant');
     }
 
 }

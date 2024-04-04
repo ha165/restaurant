@@ -20,7 +20,7 @@
           </li>
           
           <li class="nav-item menu-items">
-            <a class="nav-link" href="{{url('/restaurants')}}">
+            <a class="nav-link" href="{{url('/restaurant')}}">
               <span class="menu-icon">
                 <i class="mdi mdi-playlist-play"></i>
               </span>
