@@ -4,12 +4,14 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use illuminate\Support\Facades\Auth;
+use App\Models\Restaurant;
 
 class HomeController extends Controller
 {
   public function index()
   {
-    return view('home');
+    $rest = Restaurant::all();
+    return view('home',['rest'=>$rest]);
   }
   public function redirects()
   {
@@ -17,7 +19,8 @@ class HomeController extends Controller
     if ($usertype == '1') {
       return view('admin.dashboard');
     } else {
-      return view('home');
+      $rest = Restaurant::all();
+       return view('home',['rest'=>$rest]);
     }
   }
 }

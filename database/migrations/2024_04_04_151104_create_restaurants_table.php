@@ -12,10 +12,12 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('restaurants', function (Blueprint $table) {
-            $table->id();
+           $table->id();
             $table->string('name');
             $table->unsignedBigInteger('category_id'); 
+            $table->unsignedBigInteger('food_id'); 
             $table->foreign('category_id')->references('id')->on('category')->onDelete('cascade');
+            $table->foreign('food_id')->references('id')->on('food')->onDelete('cascade');
             $table->string('price_range');
             $table->string('location');
             $table->float('rating')->nullable();

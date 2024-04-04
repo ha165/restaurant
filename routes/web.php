@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\RestaurantController;
 
 /*
 |--------------------------------------------------------------------------
@@ -23,6 +24,10 @@ Route::get('/redirects', ([HomeController::class, 'redirects']));
 Route::get('users',[AdminController::class,'users']);
 
 Route::get('/restaurant',[AdminController::class,'restaurant']);
+
+Route::post('/uploadrest',[AdminController::class,'uploadrest']);
+
+Route::post('/findMatching',[RestaurantController::class,'findMatching']);
 
 
 Route::middleware([
