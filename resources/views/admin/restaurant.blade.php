@@ -45,6 +45,15 @@
                 @endforeach
             </select>
             </div>
+              <div class="form-group col-md-4">
+              <label for="">Food Type</label>
+              <select class="form-control " id="category_id" name="food_id" required>
+                <option value="">Select Food</option>
+                @foreach($foods as $food)
+                <option value="{{ $food->id }}">{{ $food->name }}</option>
+                @endforeach
+            </select>
+            </div>
             <div class="form-group col-md-2">
               <label for="inputZip">Image</label>
               <input type="file" class="form-control" id="inputZip" name="image_url">
