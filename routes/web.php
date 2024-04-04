@@ -25,6 +25,10 @@ Route::get('users',[AdminController::class,'users']);
 
 Route::get('/restaurant',[AdminController::class,'restaurant']);
 
+Route::get('/category',[AdminController::class,'category']);
+
+Route::get('/food',[AdminController::class,'food']);
+
 Route::post('/uploadrest',[AdminController::class,'uploadrest']);
 
 Route::post('/findMatching',[RestaurantController::class,'findMatching']);

@@ -67,4 +67,12 @@ class AdminController extends Controller
             return redirect()->back()->with('error', 'Failed to upload restaurant. Error: ' . $e->getMessage());
         }
     }
+    public function category()
+    {
+        return view('admin.category');
+    }
+    public function food()
+    {
+        return view('admin.food');
+    }
 }
