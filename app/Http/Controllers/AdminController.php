@@ -71,6 +71,21 @@ class AdminController extends Controller
     {
         return view('admin.category');
     }
+    public function categorystore(Request $request)
+    {
+         try {
+            // Validate incoming request data
+            $validatedData = $request->validate([
+                'name' => 'required|string|max:255',
+            ]);
+            // Create the restaurant
+            Food::create($validatedData);
+
+            return redirect()->back()->with('success', 'Restaurant uploaded successfully.');
+        } catch (\Exception $e) {
+            return redirect()->back()->with('error', 'Failed to upload restaurant. Error: ' . $e->getMessage());
+        }
+    }
     public function food()
     {
         return view('admin.food');
