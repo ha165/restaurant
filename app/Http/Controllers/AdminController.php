@@ -79,7 +79,7 @@ class AdminController extends Controller
                 'name' => 'required|string|max:255',
             ]);
             // Create the restaurant
-            Food::create($validatedData);
+            Category::create($validatedData);
 
             return redirect()->back()->with('success', 'Restaurant uploaded successfully.');
         } catch (\Exception $e) {

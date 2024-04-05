@@ -11,7 +11,7 @@
       @include("admin.navbar")  
        <div class="container-fluid py-4">
         <h1>New Category</h1>
-    <form action="" method="POST" enctype="multipart/form-data">
+    <form action="{{url('/uploadcategory')}}" method="POST" enctype="multipart/form-data">
       @csrf
         <div class="form-row">
             <div class="form-group col-md-6">

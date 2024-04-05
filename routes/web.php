@@ -27,7 +27,11 @@ Route::get('/restaurant',[AdminController::class,'restaurant']);
 
 Route::get('/category',[AdminController::class,'category']);
 
+Route::post('/uploadcategory',[AdminController::class,'categorystore']);
+
 Route::get('/food',[AdminController::class,'food']);
+
+Route::post('/uploadfood',[AdminController::class,'uploadfood']);
 
 Route::post('/uploadrest',[AdminController::class,'uploadrest']);
 
