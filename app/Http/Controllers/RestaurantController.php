@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Restaurant;
+use Illuminate\Support\Facades\DB;
 
 class RestaurantController extends Controller
 {
@@ -42,5 +43,49 @@ class RestaurantController extends Controller
 
         // Pass the exact matches to the view
         return view('restaurants.index', ['restaurants' => $exactMatches]);
+    }
+    public function searchRestaurants(Request $request)
+    {
+        // Retrieve user input
+        $price = $request->input('price_range');
+        $location = $request->input('location');
+        $rating = $request->input('rating');
+        $categoryId = $request->input('category_id');
+        $foodId = $request->input('food_id');
+
+        // Perform database query to find matching restaurants
+        $query = DB::table('restaurants')
+            ->where('location', 'LIKE', "%$location%")
+            ->where('rating', '>=', $rating)
+            ->where('price_range', 'LIKE', "%$price%");
+
+        if ($categoryId) {
+            $query->where('category_id', $categoryId);
+        }
+
+        if ($foodId) {
+            $query->where('food_id', $foodId);
+        }
+
+        $restaurants = $query->get();
+
+        // If no exact matches found, find closest matches based on location, rating, and price range
+        $closestMatches = [];
+        if ($restaurants->isEmpty()) {
+            $closestMatches = DB::table('restaurants')
+                ->orderByRaw("
+                    IF(location = '$location', 0, 1) +
+                    ABS(rating - $rating) +
+                    ABS(SUBSTRING_INDEX(price_range, '-', 1) - $price)
+                ")
+                ->take(5) // Adjust the number of closest matches as needed
+                ->get();
+        }
+        // Pass the data to the view
+        return view('results', [
+            'restaurants' => $restaurants,
+            'closestMatches' => $closestMatches,
+            'priceRange' => $price,
+        ]);
     }
 }

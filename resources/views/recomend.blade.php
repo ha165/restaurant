@@ -30,23 +30,39 @@
                 <div class="col-lg-6">
                     <div class="contact-form">
                         <form id="contact" action="{{url('/findMatching')}}" method="post">
+                          @csrf
                           <div class="row">
                             <div class="col-lg-12">
                                 <h4>Table Recomendation</h4>
                             </div>
                             <div class="col-lg-6 col-sm-12">
                               <fieldset>
-                                <input name="food_type" type="text" id="food_type" placeholder="Enter type of Food*" required="">
+                                <select class="form-control " id="food_id" name="food_id" required>
+                                   <option value="">Select Food</option>
+                                      @foreach($foods as $food)
+                                        <option value="{{ $food->id }}">{{ $food->name }}</option>
+                                      @endforeach
+                                   </select>
                               </fieldset>
                             </div>
                             <div class="col-lg-6 col-sm-12">
                               <fieldset>
-                              <input name="category" type="text" id="category" placeholder="Prefered Category" required="">
+                              <select class="form-control " id="category_id" name="category_id" required>
+                                <option value="">Select Category</option>
+                                  @foreach($categories as $category)
+                                <option value="{{ $category->id }}">{{ $category->name }}</option>
+                                  @endforeach
+                              </select>
                             </fieldset>
                             </div>
                             <div class="col-lg-6 col-sm-12">
                               <fieldset>
                                 <input name="price_range" type="text" id="price" placeholder="Enter Amount you wish to spend*" required="">
+                              </fieldset>
+                            </div>
+                            <div class="col-lg-6 col-sm-12">
+                              <fieldset>
+                                <input name="rating" type="text" id="rating" placeholder="Enter Prefered rating" required="">
                               </fieldset>
                             </div>
                             <div class="col-lg-6 col-sm-12">

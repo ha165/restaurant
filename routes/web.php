@@ -35,7 +35,7 @@ Route::post('/uploadfood',[AdminController::class,'uploadfood']);
 
 Route::post('/uploadrest',[AdminController::class,'uploadrest']);
 
-Route::post('/findMatching',[RestaurantController::class,'findMatching']);
+Route::post('/findMatching',[RestaurantController::class,'searchRestaurants']);
 
 
 Route::middleware([
