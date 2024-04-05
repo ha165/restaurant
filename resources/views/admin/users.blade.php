@@ -25,10 +25,7 @@
                 <div class="col-12">
                     <div class="card my-4">
                         <div class="card-body px-0 pb-2">
-                            <div class=" me-3 my-3 text-end">
-                                <a class="btn bg-gradient-dark mb-0" href="{{route('user.add')}}"> New
-                                    User</a>
-                            </div>
+                    
                             <div class="table-responsive p-0">
                                 <table id="userstable" class="datatable table align-items-center mb-0">
                                     <thead>

@@ -14,7 +14,7 @@ class AdminController extends Controller
     public function users()
     {
         $users = User::all();
-        return view('admin.pages.users.users', compact('users'));
+        return view('admin.users', compact('users'));
     }
     public function restaurant()
     {
